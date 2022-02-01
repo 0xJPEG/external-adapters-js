@@ -5331,7 +5331,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chainlink/types", "workspace:packages/core/types/@chainlink"],
             ["@types/jest", "npm:27.0.3"],
             ["@types/node", "npm:16.11.19"],
-            ["hardhat", "npm:2.7.0"],
+            ["hardhat", "npm:2.7.1"],
             ["tslib", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"]
           ],
@@ -7509,31 +7509,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@ethereumjs/block", [
-        ["npm:3.4.0", {
-          "packageLocation": "./.yarn/cache/@ethereumjs-block-npm-3.4.0-969236026c-678ae85824.zip/node_modules/@ethereumjs/block/",
+        ["npm:3.6.0", {
+          "packageLocation": "./.yarn/cache/@ethereumjs-block-npm-3.6.0-3dfa100f08-b7fa5b5699.zip/node_modules/@ethereumjs/block/",
           "packageDependencies": [
-            ["@ethereumjs/block", "npm:3.4.0"],
-            ["@ethereumjs/common", "npm:2.4.0"],
-            ["@ethereumjs/tx", "npm:3.3.0"],
-            ["ethereumjs-util", "npm:7.1.0"],
-            ["merkle-patricia-tree", "npm:4.2.0"]
+            ["@ethereumjs/block", "npm:3.6.0"],
+            ["@ethereumjs/common", "npm:2.6.1"],
+            ["@ethereumjs/tx", "npm:3.5.0"],
+            ["ethereumjs-util", "npm:7.1.4"],
+            ["merkle-patricia-tree", "npm:4.2.3"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@ethereumjs/blockchain", [
-        ["npm:5.4.0", {
-          "packageLocation": "./.yarn/cache/@ethereumjs-blockchain-npm-5.4.0-e6364b6879-da9f1f32cc.zip/node_modules/@ethereumjs/blockchain/",
+        ["npm:5.5.1", {
+          "packageLocation": "./.yarn/cache/@ethereumjs-blockchain-npm-5.5.1-95ae3c5cd5-d4bf294176.zip/node_modules/@ethereumjs/blockchain/",
           "packageDependencies": [
-            ["@ethereumjs/blockchain", "npm:5.4.0"],
-            ["@ethereumjs/block", "npm:3.4.0"],
-            ["@ethereumjs/common", "npm:2.4.0"],
-            ["@ethereumjs/ethash", "npm:1.0.0"],
+            ["@ethereumjs/blockchain", "npm:5.5.1"],
+            ["@ethereumjs/block", "npm:3.6.0"],
+            ["@ethereumjs/common", "npm:2.6.1"],
+            ["@ethereumjs/ethash", "npm:1.1.0"],
             ["debug", "virtual:6e177cabfad012f413f9c41366539c04d8701f0567119998690ab02224012faa99ec3a16b9f74f4d7920ab472c12b3e70f47f8f143239c06d0e2569e60ed9f62#npm:2.6.9"],
-            ["ethereumjs-util", "npm:7.1.0"],
+            ["ethereumjs-util", "npm:7.1.4"],
             ["level-mem", "npm:5.0.1"],
             ["lru-cache", "npm:5.1.1"],
-            ["rlp", "npm:2.2.6"],
             ["semaphore-async-await", "npm:1.5.1"]
           ],
           "linkType": "HARD",
@@ -7548,16 +7547,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ethereumjs-util", "npm:7.1.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:2.6.1", {
+          "packageLocation": "./.yarn/cache/@ethereumjs-common-npm-2.6.1-43df6d56f2-3750426f31.zip/node_modules/@ethereumjs/common/",
+          "packageDependencies": [
+            ["@ethereumjs/common", "npm:2.6.1"],
+            ["crc-32", "npm:1.2.0"],
+            ["ethereumjs-util", "npm:7.1.4"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@ethereumjs/ethash", [
-        ["npm:1.0.0", {
-          "packageLocation": "./.yarn/cache/@ethereumjs-ethash-npm-1.0.0-ea4be4c6da-0a8a360224.zip/node_modules/@ethereumjs/ethash/",
+        ["npm:1.1.0", {
+          "packageLocation": "./.yarn/cache/@ethereumjs-ethash-npm-1.1.0-8e2785b32b-152bc0850e.zip/node_modules/@ethereumjs/ethash/",
           "packageDependencies": [
-            ["@ethereumjs/ethash", "npm:1.0.0"],
+            ["@ethereumjs/ethash", "npm:1.1.0"],
+            ["@ethereumjs/block", "npm:3.6.0"],
             ["@types/levelup", "npm:4.3.3"],
             ["buffer-xor", "npm:2.0.2"],
-            ["ethereumjs-util", "npm:7.1.0"],
+            ["ethereumjs-util", "npm:7.1.4"],
             ["miller-rabin", "npm:4.0.1"]
           ],
           "linkType": "HARD",
@@ -7572,27 +7581,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ethereumjs-util", "npm:7.1.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:3.5.0", {
+          "packageLocation": "./.yarn/cache/@ethereumjs-tx-npm-3.5.0-19da52284a-bd2b806541.zip/node_modules/@ethereumjs/tx/",
+          "packageDependencies": [
+            ["@ethereumjs/tx", "npm:3.5.0"],
+            ["@ethereumjs/common", "npm:2.6.1"],
+            ["ethereumjs-util", "npm:7.1.4"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@ethereumjs/vm", [
-        ["npm:5.5.2", {
-          "packageLocation": "./.yarn/cache/@ethereumjs-vm-npm-5.5.2-8a23f8355f-20a22c6ce9.zip/node_modules/@ethereumjs/vm/",
+        ["npm:5.7.0", {
+          "packageLocation": "./.yarn/cache/@ethereumjs-vm-npm-5.7.0-361c349ae5-19f17f8094.zip/node_modules/@ethereumjs/vm/",
           "packageDependencies": [
-            ["@ethereumjs/vm", "npm:5.5.2"],
-            ["@ethereumjs/block", "npm:3.4.0"],
-            ["@ethereumjs/blockchain", "npm:5.4.0"],
-            ["@ethereumjs/common", "npm:2.4.0"],
-            ["@ethereumjs/tx", "npm:3.3.0"],
+            ["@ethereumjs/vm", "npm:5.7.0"],
+            ["@ethereumjs/block", "npm:3.6.0"],
+            ["@ethereumjs/blockchain", "npm:5.5.1"],
+            ["@ethereumjs/common", "npm:2.6.1"],
+            ["@ethereumjs/tx", "npm:3.5.0"],
             ["async-eventemitter", "npm:0.2.4"],
             ["core-js-pure", "npm:3.16.0"],
-            ["debug", "virtual:6e177cabfad012f413f9c41366539c04d8701f0567119998690ab02224012faa99ec3a16b9f74f4d7920ab472c12b3e70f47f8f143239c06d0e2569e60ed9f62#npm:2.6.9"],
-            ["ethereumjs-util", "npm:7.1.0"],
+            ["debug", "virtual:361c349ae527b09fc6e5e228d97c5f3569508eb902bb752709870bc3fd178f4aa160ccda9a40f335f6638e681656691e9da18a30ccd8881ad784e096a48ae529#npm:4.3.3"],
+            ["ethereumjs-util", "npm:7.1.4"],
             ["functional-red-black-tree", "npm:1.0.1"],
             ["mcl-wasm", "npm:0.7.8"],
-            ["merkle-patricia-tree", "npm:4.2.0"],
+            ["merkle-patricia-tree", "npm:4.2.3"],
             ["rlp", "npm:2.2.6"],
-            ["rustbn.js", "npm:0.2.0"],
-            ["util.promisify", "npm:1.1.1"]
+            ["rustbn.js", "npm:0.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -15677,6 +15694,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
+        ["npm:4.3.3", {
+          "packageLocation": "./.yarn/cache/debug-npm-4.3.3-710fd4cc7f-14472d56fe.zip/node_modules/debug/",
+          "packageDependencies": [
+            ["debug", "npm:4.3.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:361c349ae527b09fc6e5e228d97c5f3569508eb902bb752709870bc3fd178f4aa160ccda9a40f335f6638e681656691e9da18a30ccd8881ad784e096a48ae529#npm:4.3.3", {
+          "packageLocation": "./.yarn/__virtual__/debug-virtual-b19f13455f/0/cache/debug-npm-4.3.3-710fd4cc7f-14472d56fe.zip/node_modules/debug/",
+          "packageDependencies": [
+            ["debug", "virtual:361c349ae527b09fc6e5e228d97c5f3569508eb902bb752709870bc3fd178f4aa160ccda9a40f335f6638e681656691e9da18a30ccd8881ad784e096a48ae529#npm:4.3.3"],
+            ["ms", "npm:2.1.2"],
+            ["supports-color", null]
+          ],
+          "packagePeers": [
+            "supports-color"
+          ],
+          "linkType": "HARD",
+        }],
         ["virtual:40c87ada7f2f684a486a15e9daad470176b55201376bfdeb15dad896f5233b78f99666966eda31038040b4d17aa8b8f8bf53fddc6773a558064319b9a0677061#npm:4.3.2", {
           "packageLocation": "./.yarn/__virtual__/debug-virtual-30dad7c6f1/0/cache/debug-npm-4.3.2-f0148b6afe-820ea160e2.zip/node_modules/debug/",
           "packageDependencies": [
@@ -17274,6 +17310,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rlp", "npm:2.2.6"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:7.1.4", {
+          "packageLocation": "./.yarn/cache/ethereumjs-util-npm-7.1.4-dd7e8a7028-ccfd9208bf.zip/node_modules/ethereumjs-util/",
+          "packageDependencies": [
+            ["ethereumjs-util", "npm:7.1.4"],
+            ["@types/bn.js", "npm:5.1.0"],
+            ["bn.js", "npm:5.2.0"],
+            ["create-hash", "npm:1.2.0"],
+            ["ethereum-cryptography", "npm:0.1.3"],
+            ["rlp", "npm:2.2.6"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["ethereumjs-wallet", [
@@ -18256,16 +18304,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["for-each", [
-        ["npm:0.3.3", {
-          "packageLocation": "./.yarn/cache/for-each-npm-0.3.3-0010ca8cdd-6c48ff2bc6.zip/node_modules/for-each/",
-          "packageDependencies": [
-            ["for-each", "npm:0.3.3"],
-            ["is-callable", "npm:1.2.3"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["for-in", [
         ["npm:1.0.2", {
           "packageLocation": "./.yarn/cache/for-in-npm-1.0.2-37e3d7aae5-09f4ae93ce.zip/node_modules/for-in/",
@@ -19108,15 +19146,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["hardhat", [
-        ["npm:2.7.0", {
-          "packageLocation": "./.yarn/cache/hardhat-npm-2.7.0-a306ae9247-a299e86676.zip/node_modules/hardhat/",
+        ["npm:2.7.1", {
+          "packageLocation": "./.yarn/cache/hardhat-npm-2.7.1-0105aaea7f-d8bcc165b3.zip/node_modules/hardhat/",
           "packageDependencies": [
-            ["hardhat", "npm:2.7.0"],
-            ["@ethereumjs/block", "npm:3.4.0"],
-            ["@ethereumjs/blockchain", "npm:5.4.0"],
-            ["@ethereumjs/common", "npm:2.4.0"],
-            ["@ethereumjs/tx", "npm:3.3.0"],
-            ["@ethereumjs/vm", "npm:5.5.2"],
+            ["hardhat", "npm:2.7.1"],
+            ["@ethereumjs/block", "npm:3.6.0"],
+            ["@ethereumjs/blockchain", "npm:5.5.1"],
+            ["@ethereumjs/common", "npm:2.6.1"],
+            ["@ethereumjs/tx", "npm:3.5.0"],
+            ["@ethereumjs/vm", "npm:5.7.0"],
             ["@ethersproject/abi", "npm:5.4.0"],
             ["@sentry/node", "npm:5.30.0"],
             ["@solidity-parser/parser", "npm:0.14.0"],
@@ -19134,7 +19172,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eth-sig-util", "npm:2.5.4"],
             ["ethereum-cryptography", "npm:0.1.3"],
             ["ethereumjs-abi", "npm:0.6.8"],
-            ["ethereumjs-util", "npm:7.1.0"],
+            ["ethereumjs-util", "npm:7.1.4"],
             ["find-up", "npm:2.1.0"],
             ["fp-ts", "npm:1.19.3"],
             ["fs-extra", "npm:7.0.1"],
@@ -24758,6 +24796,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["level-ws", "npm:2.0.0"],
             ["readable-stream", "npm:3.6.0"],
             ["rlp", "npm:2.2.6"],
+            ["semaphore-async-await", "npm:1.5.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:4.2.3", {
+          "packageLocation": "./.yarn/cache/merkle-patricia-tree-npm-4.2.3-d20c8c348a-f95d1ab768.zip/node_modules/merkle-patricia-tree/",
+          "packageDependencies": [
+            ["merkle-patricia-tree", "npm:4.2.3"],
+            ["@types/levelup", "npm:4.3.3"],
+            ["ethereumjs-util", "npm:7.1.4"],
+            ["level-mem", "npm:5.0.1"],
+            ["level-ws", "npm:2.0.0"],
+            ["readable-stream", "npm:3.6.0"],
             ["semaphore-async-await", "npm:1.5.1"]
           ],
           "linkType": "HARD",
@@ -31628,20 +31679,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/util-deprecate-npm-1.0.2-e3fe1a219c-474acf1146.zip/node_modules/util-deprecate/",
           "packageDependencies": [
             ["util-deprecate", "npm:1.0.2"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["util.promisify", [
-        ["npm:1.1.1", {
-          "packageLocation": "./.yarn/cache/util.promisify-npm-1.1.1-351ea97c2a-ea371c30b9.zip/node_modules/util.promisify/",
-          "packageDependencies": [
-            ["util.promisify", "npm:1.1.1"],
-            ["call-bind", "npm:1.0.2"],
-            ["define-properties", "npm:1.1.3"],
-            ["for-each", "npm:0.3.3"],
-            ["has-symbols", "npm:1.0.2"],
-            ["object.getownpropertydescriptors", "npm:2.1.2"]
           ],
           "linkType": "HARD",
         }]
